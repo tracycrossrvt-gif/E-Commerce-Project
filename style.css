@@ -218,8 +218,14 @@ button:active {
 /* FEATURES */
 
 #features {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(115, 66, 214, 0.1);
     padding-top: 8vw;
+}
+
+#features .row {
+    display: flex; 
 }
 
 .books {
