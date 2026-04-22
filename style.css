@@ -75,6 +75,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     padding-top: 24px;
+    position: relative;
 }
 
 .header__description {
@@ -113,12 +114,14 @@ button:active {
 .header__img--wrapper {
     padding: 20px;
      height: 50%;
-    max-height: 50vh; 
+    max-height: 50vh;
+    z-index: 2; 
 }
  .header__img--wrapper img {
    width: 100%;
    height: 100%;
-   object-fit:contain; 
+   object-fit: contain;
+    
  }
 
  .container {
@@ -130,7 +133,26 @@ button:active {
     max-width: 1200px;
     margin: 0 auto;
  }
-*/HIGHLIGHTS*/
+/* HIGHLIGHTS */
+
+
+#highlights {
+    position: relative;
+}
+#highlights:before {
+    background: url('assets/wave.svg');
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    top: -10px;
+    left: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: translateY()
+    
+}
 
 .highlight__wrapper {
     display: flex;
