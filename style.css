@@ -13,6 +13,9 @@ nav {
 .img {
     width: 100%;
 }
+.p {
+    line-height: 1.5;
+}
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -131,6 +134,7 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -143,6 +147,7 @@ button:active {
 
 .highlight__para {
     text-align: center;
+    max-width: 280px;
 }
 
 .highlight__img {
@@ -156,6 +161,7 @@ button:active {
     border-radius: 4px;
     font-size: 32px;
     margin-bottom: 24px;
+    flex-direction: row;
 }
 
 .highlight__subtitle {
